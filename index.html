@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a href="#top" class="brand" id="brand"></a>
+    <nav>
+      <a href="#digitals">Digitals</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero reveal">
+      <p class="eyebrow">Model · <span id="hero-location"></span></p>
+      <div class="hero-row">
+        <h1 class="hero-name" id="hero-name"></h1>
+        <a class="round light" href="#work" aria-label="Go to previous work">
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Digitals -->
+    <section id="digitals" class="block">
+      <div class="block-head reveal">
+        <h2>Digitals</h2>
+        <p class="mono" id="dig-date"></p>
+      </div>
+      <div class="grid digitals-grid reveal">
+        <figure class="cell photo-cell" id="dig-main"></figure>
+        <div class="cell info-cell">
+          <div>
+            <p class="mono small">Model</p>
+            <h3 id="model-name"></h3>
+          </div>
+          <dl class="stats" id="stats"></dl>
+          <span class="big-num">01</span>
+        </div>
+        <figure class="cell photo-cell" id="dig-head"></figure>
+      </div>
+      <div class="grid extra-grid" id="dig-extra"></div>
+    </section>
+
+    <!-- Previous work -->
+    <section id="work" class="block">
+      <div class="block-head reveal">
+        <h2>Previous Work</h2>
+      </div>
+      <div class="work-layout reveal">
+        <div class="grid feature" id="feature"></div>
+        <div class="grid work-grid" id="work-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="block">
+      <div class="block-head reveal">
+        <h2>Contact</h2>
+      </div>
+      <dl class="contact reveal" id="contact-list"></dl>
+    </section>
+
+    <footer class="foot mono small" id="foot"></footer>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <figure>
+      <img alt="">
+      <figcaption class="mono"></figcaption>
+    </figure>
+    <button class="lb-close" aria-label="Close">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="lb-nav">
+      <button class="round dim lb-prev" aria-label="Previous">
+        <svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      </button>
+      <button class="round light lb-next" aria-label="Next">
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
