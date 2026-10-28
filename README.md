@@ -1,4 +1,4 @@
-# Elie Kabungari — Model Portfolio
+
 
 Simple static site: digitals and previous work.
 
